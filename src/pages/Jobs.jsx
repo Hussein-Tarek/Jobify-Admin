@@ -7,6 +7,7 @@ import { Pagination } from "@material-tailwind/react";
 import Loading from "../components/Loading";
 import { useLocation } from "react-router-dom";
 
+// const origin = "https://jobify-duec.onrender.com/v1";
 const origin = "http://localhost:5000/v1";
 const Jobs = () => {
   const token =
@@ -18,7 +19,6 @@ const Jobs = () => {
   const [error, setError] = useState(false);
 
   const params = useLocation().search;
-  const origin = "http://35.158.95.84:5000/v1";
   const getJobs = async () => {
     setIsLoading(true);
     try {
