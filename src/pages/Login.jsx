@@ -124,7 +124,7 @@ const Login = () => {
               {isLoading ? (
                 <Loading />
               ) : (
-                <button className="w-full mt-2 mb-10 border-none btn bg-primary hover:bg-secondary text-gray-100">
+                <button className="w-full mt-2 mb-10 text-gray-100 border-none btn bg-primary hover:bg-secondary">
                   Login
                   <svg
                     fill="none"
@@ -147,7 +147,8 @@ const Login = () => {
         </div>
 
         <div
-          style={{ backgroundImage: `url("../../src/assets/auth-img.png")` }}
+          // style={{ backgroundImage: `url("../../src/assets/auth-img.png")` }}
+          style={{ backgroundImage: `url("/auth-img.png")` }}
           className={` w-[50%]  fixed top-0 right-0 bottom-0 hidden lg:block bg-no-repeat bg-center h-full bg-cover   `}
         ></div>
       </div>
