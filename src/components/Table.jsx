@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { MdDeleteForever } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
 import Pagination from "./Pagination";
 import Delete from "./Delete";
 import Loading from "./Loading";
 import CheckIcon from "./CheckIcon";
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const Table = ({ thead, data, page, getData, pagination }) => {
-  // const origin = "https://jobify-duec.onrender.com/v1";
-  const origin = "http://localhost:5000/v1";
+  const origin = "https://jobifyy.onrender.com/v1";
+  // const origin = "http://localhost:5000/v1";
   const [isOpen, setIsOpen] = useState(false);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -108,7 +108,7 @@ const Table = ({ thead, data, page, getData, pagination }) => {
                         htmlFor={`my-modal-3${item.id}`}
                         // className={`${styles.Button} cursor-pointer bg-transparent text-black border-2 hover:bg-red-600 hover:text-white w-auto`}
                       >
-                        <MdDeleteForever className="text-2xl text-red-500" />
+                        <MdDelete className="text-2xl text-red-500" />
                       </label>
                       <input
                         type="checkbox"

@@ -47,14 +47,6 @@ const Login = () => {
           </h1>
           <div className="lg:w-[65%] lg:p-0 px-10 w-full">
             <h1 className="mb-5 text-xl font-semibold lg:text-3xl">Login</h1>
-            <div className="mb-5">
-              <span className="mr-1 text-sm text-neutral400 lg:text-lg">
-                Don't have an account?
-              </span>
-              <Link className="text-sm text-primary lg:text-lg" to="/signup">
-                SignUp
-              </Link>
-            </div>
           </div>
           <div className="lg:w-[65%] lg:p-0 px-10 w-full">
             <form onSubmit={handleSubmit(onSubmit)}>

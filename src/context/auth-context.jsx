@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export const AuthContext = React.createContext();
+const origin = "https://jobifyy.onrender.com/v1";
 
 const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const AuthProvider = ({ children }) => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.post("http://localhost:5000/v1/signup", {
+      const response = await axios.post(`${origin}/signup`, {
         ...data,
       });
       setIsLoggedIn(true);
@@ -38,13 +39,12 @@ const AuthProvider = ({ children }) => {
     }
     setIsLoading(false);
   };
-  // const origin = "http://52.58.155.219:5000/";
-  const origin = "http://localhost:5000/";
+  // const origin = "http://localhost:5000/";
   const login = async (data) => {
     setIsLoading(true);
     setError(false);
     try {
-      const response = await axios.post(`${origin}v1/login`, {
+      const response = await axios.post(`${origin}/login`, {
         ...data,
       });
       setIsLoggedIn(true);

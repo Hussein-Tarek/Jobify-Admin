@@ -8,8 +8,8 @@ import Loading from "../components/Loading";
 import { useLocation } from "react-router-dom";
 
 const Employers = () => {
-  // const origin = "https://jobify-duec.onrender.com/v1";
-  const origin = "http://localhost:5000/v1";
+  const origin = "https://jobifyy.onrender.com/v1";
+  // const origin = "http://localhost:5000/v1";
   const params = useLocation().search;
   const token =
     localStorage.getItem("accessToken") &&

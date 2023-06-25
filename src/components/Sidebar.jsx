@@ -41,7 +41,7 @@ const Sidebar = () => {
                 }
               >
                 <i className="pr-0 fa fa-envelope md:pr-3"></i>
-                users
+                Users
               </NavLink>
             </li>
             <li className="flex-1 mr-3">

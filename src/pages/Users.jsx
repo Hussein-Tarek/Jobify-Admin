@@ -7,8 +7,8 @@ import { Pagination } from "@material-tailwind/react";
 import Loading from "../components/Loading";
 import { useLocation } from "react-router-dom";
 
-const origin = "http://localhost:5000/v1";
-// const origin = "https://jobify-duec.onrender.com/v1";
+// const origin = "http://localhost:5000/v1";
+const origin = "https://jobifyy.onrender.com/v1";
 const Users = () => {
   const params = useLocation().search;
   const token =
